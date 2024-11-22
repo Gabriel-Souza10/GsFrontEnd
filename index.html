@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOTHERMAL - Recuperação de Calor Residual</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#analise">Análise</a></li>
+                <li><a href="#desenvolvedores">Equipe</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corpo Principal -->
+    <main>
+        <!-- Página 1: Início -->
+        <section id="inicio">
+            <h1>Bem-vindo à ECOTHERMAL</h1>
+            <p>Revolucionando a eficiência energética com recuperação de calor residual.</p>
+            <img src="img/Resized_ECOTHERMAL_Image_1200x400.png" alt="Projeto ECOTHERMAL">
+        </section>
+
+        <!-- Página 2: Sobre -->
+        <section id="sobre">
+            <h2>Sobre o Projeto</h2>
+            <p>
+                Nosso objetivo é capturar o calor residual de processos industriais e convertê-lo em energia útil, reduzindo custos e impactos ambientais. <button id="toggle-text">Leia mais</button>
+            </p>
+            <p id="extra-text" style="display: none;">
+                A recuperação de calor residual é uma solução sustentável e eficiente que transforma perdas em ganhos, contribuindo para a sustentabilidade ambiental e para a economia de energia.
+            </p>
+
+            <h3>Gráfico de Eficiência Energética</h3>
+            <canvas id="efficiencyChart"></canvas>
+
+            <h3>Gestão de Energia</h3>
+            <canvas id="energyChart"></canvas>
+        </section>
+
+        <!-- Página 3: Análise -->
+        <section id="analise">
+            <h2>Análise e Alertas</h2>
+            <article>
+                <h3>Alertas</h3>
+                <ul>
+                    <li class="alert critical">Turbina superaquecida! Ação imediata necessária.</li>
+                    <li class="alert warning">Manutenção preventiva em 5 dias.</li>
+                    <li class="alert info">Novo relatório disponível.</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Análise Preditiva</h3>
+                <canvas id="predictiveChart"></canvas>
+            </article>
+
+            <article>
+                <h3>Treinamento</h3>
+                <p>Acesse nossos tutoriais interativos e prepare sua equipe para o futuro.</p>
+                <ul>
+                    <li><a href="treinamento.html">Como ajustar a eficiência do sistema</a></li>
+                    <li><a href="treinamento.html">Dicas de manutenção preventiva</a></li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Página 4: Equipe -->
+        <section id="desenvolvedores">
+            <h2>Equipe ECOTHERMAL</h2>
+            <div class="developer">
+                <img src="img/GABRIEL_150x150.png" alt="Foto do Desenvolvedor">
+                <h3>Desenvolvedor 1</h3>
+                <p>RM: 560812</p>
+                <p>E-mail Desenvolvedor: Gabriel292603@gmail.com  </p>
+                <a href="https://www.linkedin.com/in/gabriel-souza-42bb002b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmDj2crxdQi2U1GTgqubf5w%3D%3D" target="_blank">LinkedIn</a>
+            </div>
+            <div class="developer">
+                <img src="img/THOMAS_150x150.png" alt="Foto do Desenvolvedor">
+                <h3>Desenvolvedor 2</h3>
+                <p>RM: 560649</p>
+                <p>E-mail Desenvolvedor: baute.thomas25@gmail.com</p>
+                <a href="https://www.linkedin.com/in/thomas-baute-2259482b5?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEdU%2Bc2ExRDyCYXiPsxqYFg%3D%3D" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+
+        <!-- Página 5: Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="contactForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 ECOTHERMAL - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
